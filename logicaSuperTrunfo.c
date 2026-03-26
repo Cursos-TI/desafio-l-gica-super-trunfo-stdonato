@@ -53,7 +53,7 @@ int main() {
   printf("Carta 2:\n");
 
   printf("Informe o Estado (sigla com 2 letras):");
-  scanf(" %s", estado2);
+  scanf("%s",estado2);
 
   printf("Código da carta (número de 01 a 04):");
   scanf("%s", codigo_carta2);
