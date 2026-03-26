@@ -7,7 +7,7 @@
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
-  char estado[3], estado2[3];                      // Sigla do estado
+  char estado[3], estado2[3];                // Sigla do estado
   char codigo_carta[4], codigo_carta2[4];    // Letra do estado seguida de um número de 01 a 04. ex: A01
   char nome_cidade[25], nome_cidade2[25];    // Nome da cidade sem espaços
   int populacao, populacao2;                 // Numero de habitantes da cidade
@@ -111,7 +111,7 @@ int main() {
   printf("Carta 1 - %s (%s): %d \n", nome_cidade, estado, populacao);
   printf("Carta 2 - %s (%s): %d \n", nome_cidade2, estado2, populacao2);
 
-  // Compara as populacoes e mostra a vencedora	
+  // Compara as populacoes e exibe a vencedora	
   if (populacao > populacao2) {
      printf("Resultado: Carta 1 - %s (%s) venceu! \n", nome_cidade, estado);
   } else {
