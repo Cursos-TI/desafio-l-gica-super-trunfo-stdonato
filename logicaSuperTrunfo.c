@@ -7,7 +7,7 @@
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
-  char estado[2], estado2[2];                // Sigla do estado
+  char estado[4], estado2[4];                // Sigla do estado
   char codigo_carta[4], codigo_carta2[4];    // Letra do estado seguida de um número de 01 a 04. ex: A01
   char nome_cidade[25], nome_cidade2[25];    // Nome da cidade sem espaços
   int populacao, populacao2;                 // Numero de habitantes da cidade
@@ -53,7 +53,7 @@ int main() {
   printf("Carta 2:\n");
 
   printf("Informe o Estado (sigla com 2 letras):");
-  scanf("%s",estado2);
+  scanf(" %s", estado2);
 
   printf("Código da carta (número de 01 a 04):");
   scanf("%s", codigo_carta2);
