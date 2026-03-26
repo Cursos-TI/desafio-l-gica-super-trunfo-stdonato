@@ -17,11 +17,6 @@ int main() {
   float densidade, densidade2;               // Densidade populacional
   float pib_pc, pib_pc2;                     // PIB per capita da cidade
   
-  // Resultados das comparações
-  float super_poder, super_poder2;           // Soma dos atributos numéricos
-  float resultado_super_poder;               // Resultado super poder
-  char vencedor1[25] = "Carta 1 venceu!"; 
-  char vencedor2[25] = "Carta 2 venceu!";
 
   // Código para dados da primeira carta
   // Área para entrada de dados - Carta 1
@@ -31,7 +26,7 @@ int main() {
   printf("Informe o Estado (sigla com 2 letras): ");
   scanf("%s", estado);
 
-  printf("Código da carta (1 letra + número de 01 a 04): ");
+  printf("Código da carta (número de 01 a 04): ");
   scanf("%s", codigo_carta);
 
   printf("Nome da Cidade (sem espaços): ");
@@ -60,7 +55,7 @@ int main() {
   printf("Informe o Estado (sigla com 2 letras): ");
   scanf("%s", estado2);
 
-  printf("Código da carta (1 letra + número de 01 a 04): ");
+  printf("Código da carta (número de 01 a 04): ");
   scanf("%s", codigo_carta2);
 
   printf("Nome da Cidade (sem espaços): ");
@@ -112,16 +107,16 @@ int main() {
   // Resultados das comparações
   printf("\nComparação de cartas (Atributo: População): \n\n");  
 
-  //Carta 1 - São Paulo (SP): 12.300.000
-  //Carta 2 - Rio de Janeiro (RJ): 6.000.000
-  //Resultado: Carta 1 (São Paulo) venceu!
-
-  // Exibe as populacoes
+  // Exibe as populacoes 
   printf("Carta 1 - %s (%s): %d \n", nome_cidade, estado, populacao);
   printf("Carta 2 - %s (%s): %d \n", nome_cidade2, estado2, populacao2);
-  
-  // Comparar os valores e exibe a variavel vencedor1 para 1 ou vencedor2 para 0
-  printf("Resultado: %s (%d) \n", (populacao > populacao2) ? vencedor1 : vencedor2, populacao > populacao2);
-   
+
+  // Compara as populacoes e mostra a vencedora	
+  if (populacao > populacao2) {
+     printf("Resultado: Carta 1 - %s (%s) venceu! \n", nome_cidade, estado);
+  } else {
+     printf("Resultado: Carta 2 - %s (%s) venceu! \n", nome_cidade2, estado2);
+  }
+
 return 0;
 } 
