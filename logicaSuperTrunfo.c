@@ -23,25 +23,25 @@ int main() {
   printf("Cadastro de Cartas - Super Trunfo C\n\n");
   printf("Carta 1:\n");
 
-  printf("Informe o Estado (sigla com 2 letras):");
+  printf("Informe o Estado (sigla com 2 letras): ");
   scanf("%s", estado);
 
-  printf("Código da carta (número de 01 a 04):");
+  printf("Código da carta (número de 01 a 04): ");
   scanf("%s", codigo_carta);
 
-  printf("Nome da Cidade (sem espaços):");
+  printf("Nome da Cidade (sem espaços): ");
   scanf("%s", nome_cidade);
 
-  printf("População da Cidade:");
+  printf("População da Cidade: ");
   scanf("%d", &populacao);
 
-  printf("Área da Cidade (em km quadrados):");
+  printf("Área da Cidade (em km quadrados): ");
   scanf("%f", &area_cidade);
 
-  printf("PIB da Cidade (em bilhões de reais):");
+  printf("PIB da Cidade (em bilhões de reais): ");
   scanf("%f", &pib_cidade);
 
-  printf("Número de pontos turísticos:");
+  printf("Número de pontos turísticos: ");
   scanf("%d", &pontos_turisticos);
 
   densidade = (populacao / area_cidade);
@@ -52,25 +52,25 @@ int main() {
   printf("\nCadastro de Cartas - Super Trunfo C\n\n");
   printf("Carta 2:\n");
 
-  printf("Informe o Estado (sigla com 2 letras):");
+  printf("Informe o Estado (sigla com 2 letras): ");
   scanf(" %s", estado2);
 
-  printf("Código da carta (número de 01 a 04):");
+  printf("Código da carta (número de 01 a 04): ");
   scanf("%s", codigo_carta2);
 
-  printf("Nome da Cidade (sem espaços):");
+  printf("Nome da Cidade (sem espaços): ");
   scanf("%s", nome_cidade2);
 
-  printf("População da Cidade:");
+  printf("População da Cidade: ");
   scanf("%d", &populacao2);
 
-  printf("Área da Cidade (em km quadrados):");
+  printf("Área da Cidade (em km quadrados): ");
   scanf("%f", &area_cidade2);
 
-  printf("PIB da Cidade (em bilhões de reais):");
+  printf("PIB da Cidade (em bilhões de reais): ");
   scanf("%f", &pib_cidade2);
 
-  printf("Número de pontos turísticos:");
+  printf("Número de pontos turísticos: ");
   scanf("%d", &pontos_turisticos2);
 
   densidade2 = (populacao2 / area_cidade2);
